@@ -33,8 +33,23 @@ module.exports = {
 
   module: {
 
-    rules: [{
+    rules: [
+      {
+
+        test: require.resolve('jquery'),
+
+        loader: 'expose-loader',
+
+        options: {
+
+          exposes: ['$', 'jQuery'],
+
+        }
+
+      },
+      {
         test: /\.(sa|sc|c)ss$/,
+        
         use: [{
             loader: MiniCssExtractPlugin.loader,
             options: {
@@ -46,6 +61,33 @@ module.exports = {
       },
       {
 
+        test: /\.(svg|eot|woff|woff2|ttf)$/,
+
+        use: [
+
+          {
+
+            loader: "file-loader", 
+
+            options: {
+
+              name: '[name].[ext]',
+
+              outputPath: "fonts",
+
+              esModule: false,
+
+            }
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        
         test: /\.(png|svg|jpe?g|gif)$/,
 
         use: [
@@ -67,6 +109,9 @@ module.exports = {
         ]
 
       },
+
+      
+
       {
         test: /\.html$/,
         use: [{
@@ -78,6 +123,8 @@ module.exports = {
       }
     ]
   },
+  
+  
 
   plugins: [
 
@@ -95,4 +142,5 @@ module.exports = {
 
     new OptimizeCSSAssetsPlugin({}),
   ],
+
 };
