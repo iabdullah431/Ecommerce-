@@ -14,4 +14,10 @@ $(function(){
     $('.add-to-cart-btn').click(function(){
         alert("أضيف المنتج إلى عربة الشراء");
     });
+    $('#copyright').text(" جميع الحقوق محفوظة للمتجر سنه "   + new Date().getFullYear());
+    
+    $('.product-option input[type="radio"]').change(function(){
+        $(this).parents('.product-option').siblings().removeClass('active');
+        $(this).parents('.product-option').addClass('active');
+    })
 });
