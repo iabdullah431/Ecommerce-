@@ -30,25 +30,10 @@ body {
     padding: 0;
 }
 
-.custom-form-control, .custom-btn {
-    border: 1px solid #EEF0EA;
-    box-shadow: none;
-    border-radius: 2px;
-    font-size: 14px;
-    transition: all 0.03s ease;
-    padding: 6px 16px 7px 16px;
-    color: #8c8c8c;
-}
 
 .custom-navbar .container .custom-form-control:focus {
     border-color: #c2101e;
     box-shadow: 0 0 2px 0 #c2101e;
-}
-
-.custom-btn:hover {
-    background-color: #d4d4d4;
-    border: 1px solid #8c8c8c;
-    color: #b86d07;
 }
 
 .categories .nav-link {
@@ -320,7 +305,7 @@ h3.custom-heading {
     position: absolute;
     background-color: rgb(83, 204, 215, .5);
     height: 250px;
-    width: calc(100%-16px);
+    width: calc(100% - 16px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,17 +380,6 @@ h3.custom-heading {
     margin-bottom: 8px;
 }
 
-.custom-btn-primary {
-    color: #f8ad47;
-    border-color: #f8ad47;
-    background-color: transparent;
-}
-
-.custom-btn-primary:hover, .custom-btn-primary:active, .custom-btn-primary:focus, .custom-btn-primary:active:focus, .custom-btn-primary:active:hover {
-    color: #b86d07;
-    border-color: #b86d07;
-    background-color: transparent;
-}
 
 .custom-panel h4 .custom-panel .price {
     font-size: 130%;
@@ -496,18 +470,6 @@ input[type=email], input[type=number]{
     font-size: 12px;
     font-weight: bold;
     color: #555555;
-}
-
-.custom-btn-primary2 {
-    color: #000;
-    background-color: #f8ad47;
-    border-color: #f8ad47;
-}
-
-.custom-btn-primary2:hover, .custom-btn-primary2:active, .custom-btn-primary2:focus, .custom-btn-primary2:active:focus, .custom-btn-primary2:active:hover {
-    background-color: #b86d07;
-    border-color: #b86d07;
-    color: #000;
 }
 
 #newsletter form input {
@@ -709,45 +671,10 @@ h1.custom-heading{
     text-align: center;
     margin: auto;
 }
-.custom-table th, .custom-table td{
-    padding: 15px;
-    border-bottom: 1px solid #EBEBEB;
-    border-top: 1px solid #EBEBEB;
-    font-size: 120%;
-}
-.custom-table th:first-child, .custom-table td:first-child{
-    width: 50%;
-}
-.custom-table th{
-    color: #C2C2C2;
-    font-weight: normal;
-}
-.custom-btn-danger{
-    color: #ff5a5f;
-    border-color: #ff5a5f;
-    background-color: transparent;
-    border-radius: 3px;
-}
-.custom-btn-danger:hover,
-.custom-btn-danger:active,
-.custom-btn-danger:focus,
-.custom-btn-danger:active:focus,
-.custom-btn-danger:active:hover{
-    color: #c2101e;
-    border-color: #c2101e;
-    background-color: transparent;
-}
 .custom-table .custom-media{
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 15px;
-}
-.custom-table th:first-child{
-    padding-right: 20px;
-}
-.custom-table tfoot td{
-    border-bottom: none;
-    font-size: 150%;
 }
 .custom-table .total-price *{
     color: #000;
@@ -804,22 +731,6 @@ h1.custom-heading{
     cursor: pointer;
     font-weight: bold;
 }
-.ui-slider{
-    margin: 25px 0 15px !important;
-    height: 2px !important;
-}
-.ui-slider .ui-slider-handle{
-    background-color: #f8ad47 !important;
-    border: none !important;
-    border-radius: 50% !important;
-    height: 12px !important;
-    width: 12px !important;
-    top: -6px !important;
-}
- .ui-slider .ui-slider-range{
-    border: 1px solid #f8ad47 !important;
-    top: -1px !important;
- }
 
 .custom-pagination li a {
     border: 1px solid #ebebeb;
@@ -972,12 +883,7 @@ h1.custom-heading{
         font-size: 20px;
     }
 
-    /* search page */
-    .ui-slider .ui-slider-handle{
-        height: 20px !important;
-        width: 20px !important;
-        top: -10px !important;
-    }
+
     /* contact page */
     #form-subscription{
         margin-bottom: 40px;
